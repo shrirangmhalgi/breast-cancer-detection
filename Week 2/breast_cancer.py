@@ -23,6 +23,9 @@ print(f"The shape of the dataset is {df.shape}")
 # There is 1 extra Unnamed column which has 569 null values
 print(df.isna().sum())
 
+# removing the missing values
+df = df.loc[:, :'fractal_dimension_worst']
+
 # Step 5: Find the value count of B(Benign) and M(Malignant) cancer cells in the column "diagnosis"¶
 print(df['diagnosis'].value_counts())
 
