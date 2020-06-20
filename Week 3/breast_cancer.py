@@ -98,5 +98,15 @@ X_test = standard_scaler.fit_transform(X_test)
 
 # Q2: Selectively write 5 lines about each of the above three algorithms so that even a rather inexperienced person can understand it alongwith dealing all the technicalities.
 # 1. Logistics regression
+# This is a technique used for traditional statistics as well as machine learning.
+# It predicts whether a value is true or false and not continuous values.
+# It fits an S shaped logistic function. The curve goes from 0 to 1 (0 means False and 1 means True).
+# It can be used to acess what variables are useful to classify the samples.
+
 # 2. Decision tree classifier 
+# Decision tree asks a question and it follows the path of yes and no until it reaches the final conclusion.
+# We start at the top and work our way down.
+# There are various kinds of decision trees.
+
 # 3. Random Forest classifier
+# Forest as the name suggests is made up by combining many of the decision trees together.
