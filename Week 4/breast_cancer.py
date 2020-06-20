@@ -91,14 +91,14 @@ if __name__ == "__main__":
     # Step 6: Creating a pairplot and mention the findings
     df1 = df.loc[:, 'id' : 'perimeter_mean']
     sns.pairplot(df1, hue='diagnosis')
-    # plt.show()
+    plt.show()
 
     # Step 7: Create a correlation matrix and mention strongly, weakly and negatively correlated quantities.
     print(df.corr())
 
     # Step 8: Create a heatmap of the correlated features (helps in visualization)
     sns.heatmap(df.corr(), annot=True, fmt="0.0%")
-    # plt.show()
+    plt.show()
 
     # Week 3 Tasks
     # encoding the values
